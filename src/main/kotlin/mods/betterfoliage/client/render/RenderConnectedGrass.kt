@@ -6,7 +6,7 @@ import mods.octarinecore.client.render.*
 import net.minecraft.block.material.Material
 import net.minecraft.client.renderer.RenderBlocks
 
-class RenderConnectedGrass : AbstractBlockRenderingHandler(BetterFoliageMod.MOD_ID) {
+class RenderConnectedGrass : AbstractBlockRenderingHandler(mods.MODID) {
     override fun isEligible(ctx: BlockContext) =
         Config.enabled && Config.connectedGrass.enabled &&
         Config.blocks.dirt.matchesID(ctx.block) &&

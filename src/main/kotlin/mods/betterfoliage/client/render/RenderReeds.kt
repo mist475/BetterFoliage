@@ -11,7 +11,7 @@ import net.minecraft.client.renderer.RenderBlocks
 import net.minecraftforge.common.util.ForgeDirection.UP
 import org.apache.logging.log4j.Level
 
-class RenderReeds : AbstractBlockRenderingHandler(BetterFoliageMod.MOD_ID) {
+class RenderReeds : AbstractBlockRenderingHandler(mods.MODID) {
 
     val noise = simplexNoise()
     val reedIcons = iconSet(Client.genReeds.generatedResource("${BetterFoliageMod.LEGACY_DOMAIN}:better_reed_%d"))

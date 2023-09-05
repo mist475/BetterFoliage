@@ -27,7 +27,7 @@ import org.apache.logging.log4j.Level
 @SideOnly(Side.CLIENT)
 object Client {
 
-    val configKey = KeyHandler(BetterFoliageMod.MOD_NAME, 66, "key.betterfoliage.gui") {
+    val configKey = KeyHandler(mods.MODNAME, 66, "key.betterfoliage.gui") {
         FMLClientHandler.instance().showGuiScreen(
             ConfigGuiFactory.ConfigGuiBetterFoliage(Minecraft.getMinecraft().currentScreen)
         )

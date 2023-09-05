@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.RenderBlocks
 import net.minecraftforge.common.util.ForgeDirection.UP
 import org.apache.logging.log4j.Level.INFO
 
-class RenderCoral : AbstractBlockRenderingHandler(BetterFoliageMod.MOD_ID) {
+class RenderCoral : AbstractBlockRenderingHandler(mods.MODID) {
 
     val noise = simplexNoise()
 

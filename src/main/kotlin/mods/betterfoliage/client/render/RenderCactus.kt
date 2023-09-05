@@ -8,7 +8,7 @@ import net.minecraft.client.renderer.RenderBlocks
 import net.minecraftforge.common.util.ForgeDirection.*
 import org.apache.logging.log4j.Level
 
-class RenderCactus : AbstractBlockRenderingHandler(BetterFoliageMod.MOD_ID) {
+class RenderCactus : AbstractBlockRenderingHandler(mods.MODID) {
 
     val cactusStemRadius = 0.4375
     val cactusArmRotation = listOf(NORTH, SOUTH, EAST, WEST).map { Rotation.rot90[it.ordinal] }

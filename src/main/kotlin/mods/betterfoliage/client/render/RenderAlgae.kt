@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.RenderBlocks
 import net.minecraft.init.Blocks
 import org.apache.logging.log4j.Level.INFO
 
-class RenderAlgae : AbstractBlockRenderingHandler(BetterFoliageMod.MOD_ID) {
+class RenderAlgae : AbstractBlockRenderingHandler(mods.MODID) {
 
     val noise = simplexNoise()
 

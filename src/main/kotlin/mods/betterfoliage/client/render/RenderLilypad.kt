@@ -8,7 +8,7 @@ import net.minecraft.client.renderer.RenderBlocks
 import net.minecraftforge.common.util.ForgeDirection.*
 import org.apache.logging.log4j.Level
 
-class RenderLilypad : AbstractBlockRenderingHandler(BetterFoliageMod.MOD_ID) {
+class RenderLilypad : AbstractBlockRenderingHandler(mods.MODID) {
 
     val rootModel = model {
         verticalRectangle(x1 = -0.5, z1 = 0.5, x2 = 0.5, z2 = -0.5, yBottom = -1.5, yTop = -0.5)

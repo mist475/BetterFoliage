@@ -6,7 +6,7 @@ import mods.octarinecore.client.render.Axis
 import mods.octarinecore.client.render.BlockContext
 import net.minecraft.block.Block
 
-class RenderLog : AbstractRenderColumn(BetterFoliageMod.MOD_ID) {
+class RenderLog : AbstractRenderColumn(mods.MODID) {
 
     override fun isEligible(ctx: BlockContext) =
         Config.enabled && Config.roundLogs.enabled &&

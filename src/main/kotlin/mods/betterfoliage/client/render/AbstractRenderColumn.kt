@@ -178,6 +178,8 @@ abstract class AbstractRenderColumn(modId: String) : AbstractBlockRenderingHandl
                             }
                         }
                     }
+
+                    else -> {}
                 }
                 when (downType) {
                     NONSOLID -> downModel = flatBottom(quadrants[idx])
@@ -196,6 +198,8 @@ abstract class AbstractRenderColumn(modId: String) : AbstractBlockRenderingHandl
                             downModel = bottomSquare.model
                         }
                     }
+
+                    else -> {}
                 }
 
                 if (upModel != null) modelRenderer.render(

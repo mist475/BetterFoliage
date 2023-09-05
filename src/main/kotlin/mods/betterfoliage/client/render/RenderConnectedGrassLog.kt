@@ -6,7 +6,7 @@ import mods.octarinecore.client.render.*
 import net.minecraft.client.renderer.RenderBlocks
 import net.minecraftforge.common.util.ForgeDirection.*
 
-class RenderConnectedGrassLog : AbstractBlockRenderingHandler(BetterFoliageMod.MOD_ID) {
+class RenderConnectedGrassLog : AbstractBlockRenderingHandler(mods.MODID) {
 
     val grassCheckDirs = listOf(EAST, WEST, NORTH, SOUTH)
 

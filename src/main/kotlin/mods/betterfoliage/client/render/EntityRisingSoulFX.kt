@@ -65,7 +65,7 @@ AbstractEntityFX(world, x.toDouble() + 0.5, y.toDouble() + 1.0, z.toDouble() + 0
 }
 
 @SideOnly(Side.CLIENT)
-object RisingSoulTextures : ResourceHandler(BetterFoliageMod.MOD_ID) {
+object RisingSoulTextures : ResourceHandler(mods.MODID) {
     val headIcons = iconSet(BetterFoliageMod.LEGACY_DOMAIN, "rising_soul_%d")
     val trackIcon = iconStatic(BetterFoliageMod.LEGACY_DOMAIN, "soul_track")
 

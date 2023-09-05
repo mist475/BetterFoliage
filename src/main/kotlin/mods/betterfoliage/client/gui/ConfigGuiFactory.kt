@@ -18,10 +18,10 @@ class ConfigGuiFactory : IModGuiFactory {
     class ConfigGuiBetterFoliage(parentScreen: GuiScreen?) : GuiConfig(
             parentScreen,
             Config.rootGuiElements,
-            BetterFoliageMod.MOD_ID,
+            mods.MODID,
             null,
             false,
             false,
-            BetterFoliageMod.MOD_NAME
+            mods.MODNAME
     )
 }

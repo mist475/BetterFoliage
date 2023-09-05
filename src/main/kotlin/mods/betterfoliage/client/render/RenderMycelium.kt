@@ -9,7 +9,7 @@ import net.minecraft.client.renderer.RenderBlocks
 import net.minecraft.init.Blocks
 import org.apache.logging.log4j.Level.INFO
 
-class RenderMycelium : AbstractBlockRenderingHandler(BetterFoliageMod.MOD_ID) {
+class RenderMycelium : AbstractBlockRenderingHandler(mods.MODID) {
 
     val myceliumIcon = iconSet(BetterFoliageMod.LEGACY_DOMAIN, "better_mycel_%d")
     val myceliumModel = modelSet(64, RenderGrass.grassTopQuads)

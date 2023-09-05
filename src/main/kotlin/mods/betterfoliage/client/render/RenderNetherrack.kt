@@ -11,7 +11,7 @@ import net.minecraftforge.common.util.ForgeDirection.DOWN
 import net.minecraftforge.common.util.ForgeDirection.UP
 import org.apache.logging.log4j.Level.INFO
 
-class RenderNetherrack : AbstractBlockRenderingHandler(BetterFoliageMod.MOD_ID) {
+class RenderNetherrack : AbstractBlockRenderingHandler(mods.MODID) {
 
     val netherrackIcon = iconSet(BetterFoliageMod.LEGACY_DOMAIN, "better_netherrack_%d")
     val netherrackModel = modelSet(64) { modelIdx ->

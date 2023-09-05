@@ -16,7 +16,7 @@ import net.minecraft.client.renderer.texture.TextureAtlasSprite
 import net.minecraftforge.common.util.ForgeDirection.UP
 import org.apache.logging.log4j.Level.INFO
 
-class RenderGrass : AbstractBlockRenderingHandler(BetterFoliageMod.MOD_ID) {
+class RenderGrass : AbstractBlockRenderingHandler(mods.MODID) {
 
     companion object {
         @JvmStatic val grassTopQuads: Model.(Int)->Unit = { modelIdx ->

@@ -24,7 +24,7 @@ private fun BiomeGenBase.filterClass(vararg name: String) = name.any { it in thi
 
 // Config singleton
 @SideOnly(Side.CLIENT)
-object Config : DelegatingConfig(BetterFoliageMod.MOD_ID, BetterFoliageMod.DOMAIN) {
+object Config : DelegatingConfig(mods.MODID, BetterFoliageMod.DOMAIN) {
 
     var enabled by boolean(true)
 

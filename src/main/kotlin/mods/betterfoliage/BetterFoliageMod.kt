@@ -17,19 +17,18 @@ import org.apache.logging.log4j.Level.*
 import org.apache.logging.log4j.Logger
 
 @Mod(
-    modid = BetterFoliageMod.MOD_ID,
-    name = BetterFoliageMod.MOD_NAME,
-    acceptedMinecraftVersions = BetterFoliageMod.MC_VERSIONS,
-    guiFactory = BetterFoliageMod.GUI_FACTORY
+    acceptedMinecraftVersions = "[1.7.10]",
+    guiFactory = "mods.betterfoliage.client.gui.ConfigGuiFactory",
+    modLanguageAdapter = "net.shadowfacts.forgelin.KotlinAdapter",
+    modid = mods.MODID,
+    name = mods.MODNAME,
+    dependencies = "required-after:forgelin;",
+    version = mods.VERSION
 )
 object BetterFoliageMod {
 
-    const val MOD_ID = "BetterFoliage"
-    const val MOD_NAME = "Better Foliage"
     const val DOMAIN = "betterfoliage"
     const val LEGACY_DOMAIN = "bettergrassandleaves"
-    const val MC_VERSIONS = "[1.7.10]"
-    const val GUI_FACTORY = "mods.betterfoliage.client.gui.ConfigGuiFactory"
 
     var log: Logger? = null
     var config: Configuration? = null
